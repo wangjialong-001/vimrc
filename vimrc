@@ -281,7 +281,7 @@ nnoremap <silent> <F9> :NERDTree<CR>
 " 改变nerdtree的箭头
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
-let NERDTreeWinSize=25
+let NERDTreeWinSize=20
 " vim 启动时自动打开 NERDTree
 autocmd VimEnter * NERDTree
 
@@ -342,15 +342,18 @@ let g:NERDSpaceDelims=1
 
 
 " 'mattn/emmet-vim'
-" <c-m>, 自动补全 
+" <c-m>, 自动补全,<c-m> 是触发键
 " 修改Emmet的触发键
 let g:user_emmet_leader_key='<c-m>'
 " 只在html和css文件中起作用
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstal
 
+
+
 " 'docunext/closetag.vim'
 let g:closetag_html_style=1
+
 
 " scrooloose/syntastic
 let g:syntastic_error_symbol='>>'
